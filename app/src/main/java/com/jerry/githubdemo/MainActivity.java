@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 public class MainActivity extends AppCompatActivity
 {
 
@@ -14,12 +16,14 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TextView textView = new TextView(this);
     }
 
     public void openOther(View view)
     {
         Intent intent = new Intent();
         intent.setClass(this,SecondActivity.class);
-        startActivityForResult(intent,100);
+        startActivityForResult(intent,300);
     }
 }
