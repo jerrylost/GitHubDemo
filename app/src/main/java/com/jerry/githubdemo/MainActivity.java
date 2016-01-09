@@ -20,6 +20,6 @@ public class MainActivity extends AppCompatActivity
     {
         Intent intent = new Intent();
         intent.setClass(this,SecondActivity.class);
-        startActivityForResult(intent,100);
+        startActivity(intent);
     }
 }
